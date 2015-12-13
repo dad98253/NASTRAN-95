@@ -4,10 +4,8 @@ language: c
 
 sudo: required
 
-env:
-- DISTRO=ubuntu-precise
-
 install:
+    - sudo apt-get update
     - sudo apt-get install gfortran autoconf automake intltool
 
 before_script:
