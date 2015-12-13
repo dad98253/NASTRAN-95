@@ -1,5 +1,7 @@
 # NASTRAN-95
 
+[![Build Status](https://travis-ci.org/ldallolio/NASTRAN-95.svg?branch=master)](https://travis-ci.org/ldallolio/NASTRAN-95)
+
 NASTRAN has been released under the  
 [NASA Open Source Agreement version 1.3](https://github.com/nasa/NASTRAN-95/raw/master/NASA%20Open%20Source%20Agreement-NASTRAN%2095.doc).
 

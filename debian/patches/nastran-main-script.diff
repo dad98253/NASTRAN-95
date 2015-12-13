@@ -9,7 +9,7 @@
  export DIRCTY="${TMPDIR:-/tmp}"
  
  export FT05=$1
-@@ -43,7 +43,7 @@
+@@ -55,7 +55,7 @@
  export PROJ="."
  # RUN NASTRAN
  
