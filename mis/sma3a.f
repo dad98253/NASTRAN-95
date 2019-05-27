@@ -16,7 +16,7 @@ C*****
 C
       DIMENSION
      1                   MCBCUR(7)          ,MCB(7)
-     2,                                     ,IBUFF3(3)
+     2,                                      IBUFF3(3)
      3,                  NAME(2)
 C
       COMMON /BLANK/
