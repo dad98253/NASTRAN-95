@@ -3,9 +3,9 @@ C
 C     ADD UP MATRICIES
 C
       INTEGER         A,B,C,D,E,OUT,TYPA,TYPB,TYPC,TYPD,TYPE
-      REAL            ALP(2),BET(2),GAM(2),DEL(2),EPS(2),Z(1)
+      REAL            ALP(2),BET(2),GAM(2),DEL(2),EPS(2),Z
       COMMON /SYSTEM/ KSYSTM(54), IPREC
-      COMMON /ZZZZZZ/ Z
+      COMMON /ZZZZZZ/ Z(1)
       COMMON /SADDX / NOMAT,LCORE,MCBA(7),TYPA,ALPHA(4),MCBB(7),TYPB,
      1                BETA(4),MCBC(7),TYPC,GAMA(4),MCBD(7),TYPD,
      2                DELTA(4),MCBE(7),TYPE,EPSLN(4),MC(7)

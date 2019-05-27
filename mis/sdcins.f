@@ -15,10 +15,10 @@ C
       INTEGER          AC(1)    ,BLOCK(15),PRC     ,PREC    ,RLCMPX ,
      1                 TYPE     ,WORDS
       REAL             VECS(1)  ,XNS(1)
-      DOUBLE PRECISION XND(1)   ,VECD(1)
+      DOUBLE PRECISION XND      ,VECD(1)
       COMMON /SYSTEM/  SYSBUF   ,NOUT
       COMMON /TYPE  /  PRC(2)   ,WORDS(4) ,RLCMPX(4)
-      COMMON /ZZZZZZ/  XND
+      COMMON /ZZZZZZ/  XND(1)
       EQUIVALENCE      (XND(1),XNS(1))
 C
 C     PERFORM GENERAL INITIALIZATION

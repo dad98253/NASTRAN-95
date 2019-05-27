@@ -16,7 +16,7 @@ C*****
 C
       DIMENSION
      1                   MCBCUR(7)          ,MCB(7)
-     2,                  Q(1)               ,IBUFF3(3)
+     2,                                     ,IBUFF3(3)
      3,                  NAME(2)
 C
       COMMON /BLANK/
@@ -26,7 +26,7 @@ C
      1                   ISYS               ,DUMMY(53)
      2,                  IPREC
       COMMON   /ZZZZZZ/
-     1                   Q
+     1                   Q(1)
       COMMON   /GENELY/
      1                   IFGEI              ,IFKGGX
      2,                  IFOUT              ,IFA

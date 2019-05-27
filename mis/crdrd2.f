@@ -5,12 +5,12 @@ C
 C     EXTERNAL          ORF    ,LSHIFT
 C     INTEGER           ORF
       INTEGER           GEOMP  ,BGPDT  ,CSTM   ,RGT    ,SCR1   ,
-     1                  BUF(20),MASK16 ,GPOINT ,Z(1)   ,MCODE(2)
+     1                  BUF(20),MASK16 ,GPOINT ,Z      ,MCODE(2)
       REAL              RZ(1)
       DOUBLE PRECISION  INDTFM(9),DEPTFM(9),RODCOS(3),IDRCOS(3),
      1                  DDRCOS(3),
      2                  DZ(1)  ,XD     ,YD     ,ZD     ,RLNGTH ,CDEP
-      COMMON /ZZZZZZ/   Z
+      COMMON /ZZZZZZ/   Z(1)
       COMMON /GP4FIL/   GEOMP  ,BGPDT  ,CSTM   ,RGT    ,SCR1
       COMMON /GP4PRM/   BUF    ,BUF1   ,BUF2   ,BUF3   ,BUF4   ,KNKL1  ,
      1                  MASK16 ,NOGO   ,GPOINT ,KN

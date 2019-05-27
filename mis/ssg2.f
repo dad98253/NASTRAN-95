@@ -13,13 +13,12 @@ C
       INTEGER         USET,GM,KFS,GO,PNBAR,PG,PM,PO,PA,SINGLE,OMIT,
      1                PVECT,PS,D,PL,PR,QR,REACT,UM,UN,UG,US,UF,UO,UA,
      2                UL,UR,PF,PABAR,PN,PFBAR,ANDF,YS,IA(7),USET1,SR4
-      DIMENSION       CORE(1)
       COMMON /SYSTEM/ DUM54(54),IPREC
       COMMON /PATX  / LC,N,NO,N4,USET1,IBC
       COMMON /BLANK / SINGLE
       COMMON /BITPOS/ UM,UO,UR,USG,USB,UL,UA,UF,US,UN,UG
       COMMON /TWO   / TWO1(32)
-      COMMON /ZZZZZZ/ CORE
+      COMMON /ZZZZZZ/ CORE(1)
 C
       DATA    USET  , GM    ,KFS   ,GO    ,PNBAR ,PM    ,PO    ,PN    /
      1        101   , 102   ,104   ,105   ,302   ,303   ,202   ,204   /

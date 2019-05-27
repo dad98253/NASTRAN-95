@@ -21,7 +21,7 @@ C
      1                IOITCD,IOBLK,SOFDUM(20),MDIUP
       COMMON /SYSTEM/ NBUF,NOUT
       COMMON /SYS   / BLKSIZ
-      COMMON /ZZZZZZ/ NSTRN
+      COMMON /ZZZZZZ/ NSTRN(1)
       EQUIVALENCE     (BUF(1),NSTRN)
       DATA    NMSBR / 4HMTRX, 4HO   /
       DATA    IWRT  / 2 /
