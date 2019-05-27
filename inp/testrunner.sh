@@ -25,8 +25,9 @@ export FTN20="none"
 export FTN21="none"
 export FTN22="none"
 export FTN23="none"
-export DBMEM="14000000"
-export OCMEM="14000000"
+#export DBMEM="14000000"
+#export OCMEM="14000000"
+source ../params.sh
 export PROJ="."
 
 set > /tmp/set.txt
