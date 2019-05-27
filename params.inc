@@ -1,0 +1,19 @@
+c
+c various paramter statements used for array dimensioning
+c
+c COMMON /ZZZZZZ/
+      PARAMETER ( ICORESZ  = 400 000 000 )
+      PARAMETER ( ICORESZD = ICORESZ / 2 )
+      PARAMETER ( IOSCARSZ = ICORESZ  - 5 )
+      PARAMETER ( IOSSZ    = IOSCARSZ + 5 )
+      PARAMETER ( IXNDSZ   = 8 500 )
+      PARAMETER ( IBSSSZ   = ICORESZ - 3 000 )
+      PARAMETER ( LCSZSZ   = 400 )
+      PARAMETER ( LCSECOSZ = ICORESZ - LCSZSZ )
+      PARAMETER ( ICRDLBP2 = ICORESZ - 12 )
+      PARAMETER ( IXSORTSZ = ICORESZ - 1 )
+
+
+c COMMON /
+      PARAMETER ( IDMAPSZ  = 600 )
+
