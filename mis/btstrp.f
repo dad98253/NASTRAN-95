@@ -73,6 +73,7 @@ C
      6        'SUN        ', 'AMDAHL     ', 'PRIME      ',
      7        'INTEL x86  ', 'DUMMY      ', 'DEC-ALPHA  ',
      8        'DEC-ALPHA  '/
+C NOTE on INTEL x86 : IEEE 754 arithmatic assumed correct (no flawed Pentiums)     
 C
 C  MACHINE OPERATING SYSTEM
 C
@@ -141,7 +142,7 @@ C     USED ONLY BY RCARD, RCARD2, XRCARD AND YRCARD
 C
      4       38,    75,    38,   321,    38,    38,    38,    38,    38,
      5       38,    38,  2465,    38,     0,     0,     0,     0,     0,
-     6       38,     0,    38,     0,
+     6      127,     0,    38,     0,
 C
 C     NUDFLW(X100) =  FLOATING NUMBER UNDERFLOW CONTROL
 C                     (USED ONLY BY FQRW AND FQRWV)
@@ -150,7 +151,7 @@ C                     CARD, USED ONLY IN NASCAR
 C
      7    16 50, 16 50, 18 49, 14 75,  8 75, 16 75, 16 75, 16 75, 16 75,
      8    16 75, 16 75, 16 75, 16 75, 16 75, 16 75, 16 75, 16 75, 16 75,
-     9    16 75, 16 75,  9 75, 16 75,
+     9     8 75, 16 75,  9 75, 16 75,
 C
 C     KSHIFT  =  SHIFT COUNTS USED IN A DIVIDE TO CONVERT A GINO LOC
 C                RETURNED FROM SAVPOS TO GINO BLOCK NUMBER, USED IN EMA
@@ -163,7 +164,7 @@ C     MANTISSA BITS, USED ONLY IN SDCMPS
 C
      3     0 00, 24 26, 27 60, 48 96, 23 55, 23 55, 23 52, 23 55, 23 55,
      4    23 55, 23 55, 48 96, 23 52, 48 96, 48 96, 23 55, 23 55, 23 55,
-     5    23 55,  0 00, 23 55,  0 00/
+     5    23 52,  0 00, 23 55,  0 00/
 C
 C     DEFINE SYSTEM (42), SYSTEM(43), SYSTEM(44)
 C
