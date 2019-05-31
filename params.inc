@@ -2,7 +2,8 @@ c
 c various paramter statements used for array dimensioning
 c
 c COMMON /ZZZZZZ/
-      PARAMETER ( ICORESZ  = 400 000 000 )
+c      PARAMETER ( ICORESZ  = 400 000 000 )
+      PARAMETER ( ICORESZ  = 40 000 000 )
       PARAMETER ( ICORESZD = ICORESZ / 2 )
       PARAMETER ( IOSCARSZ = ICORESZ  - 5 )
       PARAMETER ( IOSSZ    = IOSCARSZ + 5 )
