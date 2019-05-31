@@ -25,12 +25,6 @@ C     ================
       COMPLF = NOT(I)
       RETURN
 C
-      ENTRY LOCFX (I)
-C     ===============
-      K = LQRO/1000
-      LOCFX = LOC(I)/K
-      RETURN
-C
       ENTRY LSHIFT (I,J)
 C     ==================
       LSHIFT = ISHFT(I,J)
@@ -52,3 +46,18 @@ C     ================
       RETURN
 C
       END
+
+      integer(kind=8) FUNCTION LOCFX (I)
+c      FUNCTION LOCFX (I)
+C
+C
+      COMMON /MACHIN/ M(3), LQRO
+C
+C
+C     ===============
+      K = LQRO/1000
+      LOCFX = LOC(I)/K
+      RETURN
+      END
+
+      
