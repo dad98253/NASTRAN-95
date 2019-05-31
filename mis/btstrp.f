@@ -25,6 +25,7 @@ C
       COMMON /SYSTEM/ B(100)
       COMMON /TWO   / TWO(32),MZERO
       COMMON /XXREAD/ DUM(3) ,IBMCDC
+      COMMON /XGPI2 /  LMPL, MPLPNT    , IMP( 3166)      
       EQUIVALENCE     (B( 1),SYSBUF) ,(B(22),LINKNO) ,(B(40),NBPW ) ,
      1                (B( 2),OUTTAP) ,(B(41),NCPW ) , (B(42),IDATE(1)),
      2                (B( 4),INTP  ) ,(B(34),IDRUM ) ,(B(55),IPREC) ,
@@ -35,6 +36,7 @@ C
 C  DEFINE SYSTEM RELEASE DATE
 C
       DATA IMNTH, IYR1, IYR2 /4HAPR., 3H 19, 2H95 /
+CJCK      DATA IMNTH, IYR1, IYR2 /4HMAY , 3H 20, 2H19 /
 C
       DATA    XX    , YY    / 1.2E-38, 0.3E-38       /
       DATA    MVAX  , ABCD  , KA   /  1H1,   4HABCD  ,4HA           /
@@ -165,6 +167,10 @@ C
      3     0 00, 24 26, 27 60, 48 96, 23 55, 23 55, 23 52, 23 55, 23 55,
      4    23 55, 23 55, 48 96, 23 52, 48 96, 48 96, 23 55, 23 55, 23 55,
      5    23 52,  0 00, 23 55,  0 00/
+c
+c     initialize (to zero) of the module properties list
+c
+      DATA IMP / 3166*0 /
 C
 C     DEFINE SYSTEM (42), SYSTEM(43), SYSTEM(44)
 C
