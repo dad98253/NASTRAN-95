@@ -25,6 +25,7 @@ C
 C                        LOAD /XGPI2/
 C                   MODULE PROPTERIES LIST (MPL)
 C
+      INCLUDE '../params.inc'
       REAL             X(2,20)
       DOUBLE PRECISION XX(20)    , XXX(20)
       DIMENSION        MPL01( 68), MPL02(161), MPL03(135), MPL04(152),
@@ -32,8 +33,8 @@ C
      9                 MPL09(173), MPL10( 93), MPL11(116), MPL12(135),
      3                 MPL13(150), MPL14(151), MPL15(135), MPL16( 53),
      7                 MPL17(144), MPL18(169), MPL19(193), MPL20(186),
-     1                 MPL21(196), MPL22(119), MPL( 3166)
-      COMMON /XGPI2 /  LMPL, MPLPNT    , IMP( 3166)
+     1                 MPL21(196), MPL22(119), MPL(MPLSIZE)
+      COMMON /XGPI2 /  LMPL, MPLPNT    , IMP(MPLSIZE)
       COMMON /XGPI2X/  XXX
       EQUIVALENCE      (XX(1),X(1,1))
       EQUIVALENCE      (MPL(   1),MPL01(1)) ,(MPL(  69),MPL02(1)) ,
@@ -48,7 +49,7 @@ C
      9                 (MPL(2473),MPL19(1)) ,(MPL(2666),MPL20(1)) ,
      1                 (MPL(2852),MPL21(1)) ,(MPL(3048),MPL22(1))
 C
-      DATA    LMPLX          /    3166      /
+      DATA    LMPLX          /    MPLSIZE   /
 C
       DATA    X(1,1)         /    -1.0      /
       DATA    XX(2)          /    -1.0D+0   /

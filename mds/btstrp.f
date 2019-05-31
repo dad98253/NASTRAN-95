@@ -10,6 +10,7 @@ C
 C                ===
 C
       EXTERNAL        LSHIFT ,RSHIFT ,ANDF   ,COMPLF
+      INCLUDE '../params.inc'
       CHARACTER       MCHNAM*11, MACHOS*7, COMPUT(22)*11, COMPOS(22)*7
       INTEGER         SYSBUF ,OUTTAP ,TWO     ,COMPLF    ,RSHIFT     ,
      1                FCB    ,ORDER  ,IDATE(3),
@@ -25,7 +26,7 @@ C
       COMMON /SYSTEM/ B(100)
       COMMON /TWO   / TWO(32),MZERO
       COMMON /XXREAD/ DUM(3) ,IBMCDC
-      COMMON /XGPI2 /  LMPL, MPLPNT    , IMP( 3166)      
+      COMMON /XGPI2 /  LMPL, MPLPNT    , IMP(MPLSIZE)      
       EQUIVALENCE     (B( 1),SYSBUF) ,(B(22),LINKNO) ,(B(40),NBPW ) ,
      1                (B( 2),OUTTAP) ,(B(41),NCPW ) , (B(42),IDATE(1)),
      2                (B( 4),INTP  ) ,(B(34),IDRUM ) ,(B(55),IPREC) ,
@@ -170,7 +171,7 @@ C
 c
 c     initialize (to zero) of the module properties list
 c
-      DATA IMP / 3166*0 /
+      DATA IMP / MPLSIZE*0 /
 C
 C     DEFINE SYSTEM (42), SYSTEM(43), SYSTEM(44)
 C
