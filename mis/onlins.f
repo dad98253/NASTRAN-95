@@ -5,6 +5,7 @@ C
 C     WRITTEN FEBY G.CHAN/SPERRY,  FEB. 1986
 C
       IMPLICIT INTEGER          (A-Z)
+      INCLUDE '../params.inc'
       EXTERNAL        LSHIFT,   RSHIFT,   ANDF,     ORF,      COMPLF
       LOGICAL         DEBUG
       INTEGER         NAME(2),  CARD(20), IZ(1)
@@ -22,7 +23,7 @@ C
      2                LENCC,    IBLNK,    IEQUAL,   IEOR
 C
 C            /ZZIFP1/ IS THE OPEN CORE FOR SCAN
-      COMMON /ZZZZZZ/ LCSE(400),CORE(1)
+      COMMON /ZZZZZZ/ LCSE(400),CORE(LCSZSZ)
       EQUIVALENCE     (IZ(1),LCSE(1))
       EQUIVALENCE     (IMAX,AMAX),        (IMIN,AMIN),
      1                (IDUPL,IBEG),       (INC,IEND),

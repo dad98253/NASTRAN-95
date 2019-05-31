@@ -1,5 +1,6 @@
       SUBROUTINE DLBPT2 (INPUT,W1JK,W2JK)
 C
+      INCLUDE '../params.inc'
       INTEGER         W1JK,W2JK,SYSBUF,ECORE,TW1JK,TW2JK,NAME(2)
       DIMENSION       A(4),IZ(1)
       COMMON /PACKX / ITI,ITO,II,NN,INCR
@@ -7,7 +8,7 @@ C
       COMMON /AMGMN / MCB(7),NROW,ND,NE,REFC,FMACH,RFK
       COMMON /SYSTEM/ SYSBUF
       COMMON /ZZZZZZ/ NJ1,NK1,NP,NB,NTP,NBZ,NBY,NTZ,NTY,NT0,NTZS,NTYS,
-     1                Z(1)
+     1                Z(ICRDLBP2)
       EQUIVALENCE     (IZ(1),Z(1))
       DATA    NAME  / 4HDLBP,4HT2  /
 C
