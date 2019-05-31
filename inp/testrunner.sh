@@ -6,6 +6,7 @@ export OUT11=$1.out11
 export IN12=$1.plt
 export LOGNM=$1.log
 export FT05=$1
+export FTN04=$1.out04
 export RFDIR=../rf
 if [ -z "$SOF1" ]; then
 	export SOF1=$1.sof1
@@ -17,7 +18,7 @@ export FTN12="none"
 export FTN13="none"
 export FTN14="none"
 export FTN15=$1.out15
-export FTN16="none"
+export FTN16=$1.out16
 export FTN17="none"
 export FTN18="none"
 export FTN19="none"
@@ -36,3 +37,16 @@ export DIRCTY="${TMPDIR:-/tmp}"
 #gdb ../mds/nastran
 #ddd ../mds/nastran
 ../mds/nastran
+
+#/usr/local/bin/nastran
+
+
+cat $1.out | /home/dad/workspace/fixnastranoutput/Release/fixnastranoutput -k > $1.out.striped
+#cat $1.out.striped | sha1sum -c $1.demo.sha1
+cat $1.out.striped | sha1sum -c $1.out.O0.sha1
+
+#cat $1.out.striped | sha1sum > $1.out.O0.sha1
+#cp $1.out.striped $1.out.O0.striped
+
+
+
