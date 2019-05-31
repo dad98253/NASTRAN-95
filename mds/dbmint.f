@@ -37,9 +37,10 @@ C                   WORD  8 - OPEN FLAG FOR EXT. FILE (0,NO;1,YES)
 C               WORDS  9-10 - DMAP FILE NAME
 C               WORDS 11-16 - DMAP FILE TRAILER
 C********************************************************************
+      INCLUDE '../params.inc'
       INCLUDE  'DSIOF.COM'
       COMMON / SYSTEM / ISYSBF, IWR
-      COMMON / ZZZZZZ / MEM( 4 )
+      COMMON /ZZZZZZ/ MEM(ICORESZ)
       IDBDIR = 0
       IF ( IDBLEN .EQ. 0 ) GO TO 700
 C  INITIALIZE THE CHAIN OF FREE BLOCKS AS ONE BIG FREE BLOCK
@@ -48,7 +49,10 @@ C  INITIALIZE THE CHAIN OF FREE BLOCKS AS ONE BIG FREE BLOCK
       MEM( IDBFRE )  = 0
       MEM( IDBFRE+1) = 0
       MEM( IDBFRE+2) = IDBLEN - 2
-      MAXALC         = IDBLEN / ( ISYSBF-3+4 )
+c      MAXALC         = IDBLEN / ( ISYSBF-3+4 )
+      itempjk = ISYSBF-3+8
+      if ( mod(itempjk,2) .ne. 0 ) itempjk = itempjk + 1
+      MAXALC         = IDBLEN / itempjk
       IDBDIR = 1
 700   CONTINUE
       END
