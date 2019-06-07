@@ -43,3 +43,8 @@ Makefile
 
 # Quilt
 .pc
+
+# scratch files
+/temp
+/tmp
+/inpfromopt0
